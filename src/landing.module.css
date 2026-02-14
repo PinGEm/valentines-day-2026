@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'WindowsXP_Tahoma';
+  src: local('WindowsXP'), url('./fonts/windows-xp-tahoma.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.page{
+    width:100vw;
+    height:100vh;
+    left:0;
+    top:0;
+    position: absolute;
+    background-color: #E51E3B;
+}
+
+.UNIQUE_TEXT{
+    color:white;
+    font-family: 'WindowsXP_Tahoma', sans-serif;
+    text-align: center;
+}
+
+.UNIQUE_TEXT h1{
+    font-size: 5em;
+}
+
+.UNIQUE_TEXT h2{
+    font-weight: 550;
+    font-size:2em;
+}
+
+.UNIQUE_TEXT button{
+    color:black;
+    font-size:2em;
+    padding-left:1%;
+    padding-right:1%;
+    margin-top:2%;
+    margin-bottom:1%;
+}
+
+.UNIQUE_TEXT a{
+    color: #2FA8FF; 
+    font-size:2.5em;
+}
+
+.UNIQUE_TEXT input{
+    font-size:1.5em;
+    color:black;
+    width:15%;
+}

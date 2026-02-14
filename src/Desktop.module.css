@@ -1,0 +1,305 @@
+@font-face {
+  font-family: 'WindowsXP_Tahoma';
+  src: local('WindowsXP'), url('./fonts/windows-xp-tahoma.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.loadingBG{
+  position: absolute;
+  width:100vw;
+  height:100vh;
+  left:0;
+  top:0;
+  z-index:15;
+  text-align: center;
+  background-color: #C00000;
+  font-family: 'WindowsXP_Tahoma', sans-serif;
+  color:white;
+  font-size:3em;
+}
+
+.loadingBG h2{
+  margin-top:10%;
+}
+
+body{
+  background-color: #DA5F82;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.window_header{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #FF3334;
+  margin:0%;
+}
+
+.window_header p{
+  margin:0;
+  font-size:1.25em !important;
+  text-align: right;
+  padding-bottom:1%;
+  color:white;
+  width:fit-content;
+  
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.image{
+  width:350px;
+  height:250px;
+}
+
+.web_header{
+  display:flex;
+  flex-direction: row;
+  text-align: left;
+  margin:0%;
+  border-bottom: 3px solid #787878;
+}
+
+.web_header h3{
+  font-weight:500;
+  margin-bottom: 0%;
+  margin-top:0%;
+  margin-left:4%;
+  padding-top:2%;
+  padding-right:2%;
+
+  font-size:1.5em;
+  border-right:3px solid #787878
+}
+
+.window .web_header img{
+  width:32px;
+  margin-left: 2%;
+
+  margin-bottom:0%;
+  margin-top:0%;
+}
+
+.notepad_header{
+  display:flex;
+  flex-direction: row;
+  background-color: #cfcfcf;
+}
+
+.window .notepad_header h2{
+  font-weight:550;
+  margin-right:2%;
+  margin-left:1%;
+}
+
+.window .notepadText{
+  margin-left:2%;
+  margin-right: 2%;
+}
+
+.window{
+  left:41%;
+  top:30%;
+
+  font-family: 'WindowsXP_Tahoma', sans-serif;
+  z-index:2;
+  position: fixed;
+  width: 280px;
+  background-color: white;
+  border-radius: 8px;
+  color:black;
+  text-align: center;
+  border: 8px solid #FF3334;
+}
+
+.window h2{
+  margin: 10px 0;
+}
+
+.window img{
+  margin: 10px 0;
+  width:180px;
+}
+
+.window p{
+  font-size:1.5em;
+}
+
+.window.missubackground{
+  color:white;
+  background-color: #FF6F77;
+}
+
+.window .heartContainer h1{
+  margin:0;
+  transform: translate(-0%, -190%);
+
+   text-shadow:
+    -1px -1px 0 #ff26e95c,
+     1px -1px 0 #ff26e95c,
+    -1px  1px 0 #ff26e95c,
+     1px  1px 0 #ff26e95c;
+}
+
+.window .heartContainer img{
+  margin:0;
+}
+
+.window button{
+  pointer-events: all;
+  cursor: pointer;
+  background-color: #C00000;
+  color:white;
+  font-family: 'WindowsXP_Tahoma', sans-serif;
+  border-radius: 30px;
+  padding-top:2%;
+  padding-bottom: 2%;
+  padding-left:8%;
+  padding-right: 8%;
+  margin-bottom:5%;
+  font-size: 1.75em;
+  border: none;
+}
+
+.disabled {
+  animation: 0.5s closingAnim forwards cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 0.5s ease;
+}
+
+.static_disable{
+  display:none;
+}
+
+.mainMessageContainer{
+  position: absolute;
+  z-index: 10;
+  left:0;
+  top:0;
+  background-color: rgba(128, 128, 128, 0.466);
+  width:100vw;
+  height:100vh;
+
+  animation: 0.75s entry forwards;
+  transition: 0.5s ease;
+}
+
+.mainMessageContainer{
+  font-family: 'WindowsXP_Tahoma', sans-serif;
+  color:white;
+  font-size: 2.5em;
+  font-weight:600;
+  text-align: center;
+}
+
+.mainMessageContainer .mainMessageText{
+  margin-bottom:2%; 
+}
+
+.mainMessageContainer h1{
+  margin-left:20%;
+  margin-bottom:5%;
+  margin-right:20%;
+}
+
+.mainMessageContainer h2{
+  color: #FF6F77;
+  margin-top:0;
+  margin-bottom: 5%;
+}
+
+.mainMessageContainer h1:first-child{
+  margin-top:9%;
+}
+
+.firstSet,.secondSet,.thirdSet,.fourthSet{
+  position:absolute;
+  left:0;
+  top:0;
+  width:100vw;
+}
+
+.noButton{
+  cursor:pointer;
+  pointer-events: all;
+
+  font-family: 'WindowsXP_Tahoma', sans-serif;
+  border: 2px solid black;
+  font-size: 2em;
+  border-radius: 6px;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: #BE0000;
+}
+
+
+.yesButton{
+  cursor:pointer;
+  pointer-events: all;
+
+  margin-right: 3%;
+  font-family: 'WindowsXP_Tahoma', sans-serif;
+  font-size: 2em;
+  border: 2px solid black;
+  border-radius: 6px;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: #43BE00;
+}
+
+.fadeIn{
+  animation: 0.75s fade-in forwards;
+}
+
+.fadeOut{
+  animation: 0.5s fade-out forwards;
+}
+
+@keyframes fade-in{
+  from{
+    opacity:0;
+  }
+
+  to{
+    opacity:1;
+  }
+}
+
+@keyframes fade-out{
+  from{
+    opacity:1;
+  }
+
+  to{
+    display:none;
+    opacity:0;
+  }
+}
+
+@keyframes entry{
+  0%{
+    transform: translate(0, -200%);
+  }
+
+  100%{
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes closingAnim{
+  0%{
+    opacity:1;
+    transform: scale(1);
+  }
+
+  99%{
+    opacity:0;
+    transform: translate(0, 1.1);
+    transform: scale(0.75);
+  }
+
+  100%{
+    display:none;
+  }
+}

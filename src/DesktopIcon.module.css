@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'WindowsXP_Tahoma';
+  src: local('WindowsXP'), url('./fonts/windows-xp-tahoma.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  position: fixed;
+  width: 80px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.icon img {
+  width: 64px;
+}
+
+.icon span{
+    font-family: 'WindowsXP_Tahoma', sans-serif;
+    font-size:1.2em;
+    color:white;
+}
