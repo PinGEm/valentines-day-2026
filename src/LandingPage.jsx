@@ -8,7 +8,7 @@ function LandingPage(){
 
     const generateLink = () => {
         if (!yourName || !partnerName) return;
-        setURL(`${window.location.origin}/#/${yourName}/${partnerName}`);
+        setURL(`${window.location.origin}/#/${encodeURIComponent(yourName)}/${encodeURIComponent(partnerName)}`);
     };
 
     return (
